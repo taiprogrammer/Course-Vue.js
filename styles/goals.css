@@ -30,7 +30,7 @@ main {
     align-items: center;
 }
 
-p {
+label {
     padding: 2vh;
     font-weight: 600;
 }
