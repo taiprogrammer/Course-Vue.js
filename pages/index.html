@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goals</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/goals.css">
+
 </head>
 <body>
     <main>
         <div class="container-box">
             <div class="container-form">
-                <form">
-                    <label">
+                    <p>
                     Goal
-                    </label>
-                    <input type="text">
-                    <input type="submit" value="Add Goal" >
-                </form>
+                    </p>
+                    <input type="text" id="goal_typed">
+                    <button class="button-add-goal">Add Goal</button>
             </div>
             <div class="container-result">
-                <div class="result">
-                    <p>Test</p>
-                </div>
+                <ul class="result">
+
+                </ul>
             </div>
         </div>
     </main>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>
