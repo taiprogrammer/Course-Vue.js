@@ -2,8 +2,8 @@ const app = Vue.createApp({
     data() {
         return {
             name: 'Morgana',
-            age: 21,
-            ageInFiveYears: 26,
+            age: 'My age is '.concat(21),
+            ageInFiveYears: 'My age in five years will be: '.concat(26),
             image: 'https://i.pinimg.com/originals/59/44/0b/59440b32af377c7c14f7234526a5f2f9.png',
             enteredValue: ""
         }
