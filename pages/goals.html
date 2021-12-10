@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Goals</title>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vue Course Goals</h1>
+    </header>
+    <section class="user-goal">
+      <h2>My Course Goal</h2>
+      <!--INTERPOLATION EXAMPLE-->
+      <!-- <p v-for="item in items" :key="item.courseGoal">{{ item.courseGoal }}</p> -->
+      <p>{{ outputGoal() }}</p>
+      <p>Learn more <a v-bind:href="vueLink" target="blank">about Vue.</a></p>
+    </section>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="../js/appTwo.js"></script>
+  </body>
+</html>
