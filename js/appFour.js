@@ -10,7 +10,12 @@ const app = Vue.createApp({
     },
 
     removeCounter() {
-      this.counter --;
+      if (this.counter <= 0) {
+        this.counter = 0;
+      } else {
+        this.counter--;
+      }
+      
     },
   },
 });
