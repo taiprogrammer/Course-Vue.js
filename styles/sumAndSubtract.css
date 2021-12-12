@@ -59,3 +59,7 @@ main {
 .result {
     color: rgba(188, 49, 212, 0.55);
 }
+
+.space {
+    margin-top: 1vh;
+}

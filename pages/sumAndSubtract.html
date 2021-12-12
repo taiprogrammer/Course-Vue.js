@@ -12,11 +12,14 @@
     <main>
         <section class="section-sum-subtract">
             <h1>Type a number</h1>
-            <input type="text" v-model="enteredValue">
+            <input type="text" v-model="enteredValue" v-on:input="setNumber">
+            <input class="space" type="text" v-model="secondEnteredValue" v-on:input="tellMeName($event, 'Marques')">
                 <button v-on:click="sum()">Sum 5</button>
                 <button v-on:click="subtract()">Subtract 5</button>
-                <p class="result" v-html="sumResult"></p>
-                <p class="result" v-html="subtractResult"></p>
+                <p class="result">Result sum: {{ sumResult }}</p>
+                <p class="result">Result subtract: {{ subtractResult }}</p>
+                <p class="result">{{ numberTyped }}</p>
+                <p class="result">{{ nameTyped }}</p>
         </section>
     </main>
 

@@ -2,8 +2,11 @@ const app = Vue.createApp({
     data() {
         return {
             enteredValue: "",
+            secondEnteredValue: "",
             sumResult: "",
-            subtractResult: ""
+            subtractResult: "",
+            numberTyped: "",
+            nameTyped: ""
         }
     },
     methods: {
@@ -17,6 +20,15 @@ const app = Vue.createApp({
             number = Number(this.enteredValue)
             this.subtractResult = number - 5
             console.log(number - 5)
+        },
+
+        setNumber(event) {
+            // this.numberTyped = this.enteredValue
+            this.numberTyped = event.target.value
+        },
+
+        tellMeName(event, lastName) {
+            this.nameTyped = event.target.value.concat(" ").concat(lastName)
         }
     },
 })
