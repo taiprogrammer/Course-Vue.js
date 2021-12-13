@@ -16,9 +16,9 @@
         name=""
         id=""
         v-model="enteredValue"
-        v-on:keyup.enter="confirmInput"
+        @keyup.enter="confirmInput"
       />
-      <button v-on:click.prevent="submitForm">Sign up</button>
+      <button @click.prevent="submitForm">Sign up</button>
       <p>{{ enteredValue }}</p>
     </form>
 

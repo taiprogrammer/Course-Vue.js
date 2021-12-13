@@ -17,11 +17,11 @@
           class="space"
           type="text"
           v-model="secondEnteredValue"
-          v-on:input="tellMeName($event, 'Marques')"
-          v-on:keyup="confirmInput"
+          @input="tellMeName($event, 'Marques')"
+          @keyup="confirmInput"
         />
-        <button v-on:click="sum()">Sum 5</button>
-        <button v-on:click="subtract()">Subtract 5</button>
+        <button @click="sum()">Sum 5</button>
+        <button @click="subtract()">Subtract 5</button>
         <p class="result">Result sum: {{ sumResult }}</p>
         <p class="result">Result subtract: {{ subtractResult }}</p>
         <p class="result">{{ numberTyped }}</p>

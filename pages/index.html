@@ -13,7 +13,7 @@
       <div id="app" class="container-box">
         <label for="goal"> Goal </label>
         <input type="text" id="goal_typed" v-model="enteredValue" />
-        <button v-on:click="addGoal" class="button-add-goal">Add Goal</button>
+        <button @click="addGoal" class="button-add-goal">Add Goal</button>
         <ul class="result">
           <li v-for="goal of goals">{{ goal }}</li>
         </ul>
