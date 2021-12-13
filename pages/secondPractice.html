@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Practice</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/secondPractice.css">
+</head>
+<body>
+    <header>
+        <h1>Events</h1>
+      </header>
+      <section id="assignment">
+        <h2>Event Practice</h2>
+        <!-- 1) Show an alert (any text of your choice) when the button is pressed CHECKED-->
+        <button v-on:click="showAlert">Show Alert</button>
+        <hr />
+        <!-- 2) Register the user input on "keydown" and output it in the paragraph (hint: event.target.value helps) -->
+        <input type="text" v-on:keydown="output" />
+        <p>{{ outputTyped }}</p>
+        <hr />
+        <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
+        <input type="text" v-on:keydown.enter="outputEnterPressed" />
+        <p>{{ confirmedOutput }}</p>
+      </section>
+
+      <script src="https://unpkg.com/vue@next"></script>
+      <script src="../js/appSeven.js" defer></script>
+</html>
