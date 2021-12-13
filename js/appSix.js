@@ -1,12 +1,20 @@
 const app = Vue.createApp({
-    data() {
-        return {}
+  data() {
+    return {
+      enteredValue: "",
+      logged: "",
+      confirmedName: "",
+    };
+  },
+  methods: {
+    submitForm() {
+      alert("Olá ".concat(this.enteredValue));
+      console.log("Submitted");
     },
-    methods: {
-        submitForm() {
-            alert('Submitted')
-        }
-    }
-})
+    confirmInput() {
+      this.logged = this.enteredValue = this.confirmedName;
+    },
+  },
+});
 
-app.mount('#form')
+app.mount("#form");

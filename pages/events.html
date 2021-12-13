@@ -16,6 +16,7 @@
       <h2>Events in Action</h2>
       <button v-on:click="addCounter()">Add</button>
       <button v-on:click="removeCounter()">Reduce</button>
+      <p v-once>Starting counter: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
     </section>
 

@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sum and Subtract</title>
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/sumAndSubtract.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/sumAndSubtract.css" />
+  </head>
+  <body>
     <main>
-        <section class="section-sum-subtract">
-            <h1>Type a number</h1>
-            <input type="text" v-model="enteredValue" v-on:input="setNumber">
-            <input class="space" type="text" v-model="secondEnteredValue" v-on:input="tellMeName($event, 'Marques')">
-                <button v-on:click="sum()">Sum 5</button>
-                <button v-on:click="subtract()">Subtract 5</button>
-                <p class="result">Result sum: {{ sumResult }}</p>
-                <p class="result">Result subtract: {{ subtractResult }}</p>
-                <p class="result">{{ numberTyped }}</p>
-                <p class="result">{{ nameTyped }}</p>
-        </section>
+      <section class="section-sum-subtract">
+        <h1>Type a number</h1>
+        <input type="text" v-model="enteredValue" v-on:input="setNumber" />
+        <input
+          class="space"
+          type="text"
+          v-model="secondEnteredValue"
+          v-on:input="tellMeName($event, 'Marques')"
+          v-on:keyup="confirmInput"
+        />
+        <button v-on:click="sum()">Sum 5</button>
+        <button v-on:click="subtract()">Subtract 5</button>
+        <p class="result">Result sum: {{ sumResult }}</p>
+        <p class="result">Result subtract: {{ subtractResult }}</p>
+        <p class="result">{{ numberTyped }}</p>
+        <p class="result">{{ confirmedName }}</p>
+      </section>
     </main>
 
     <script src="https://unpkg.com/vue@next"></script>
     <script src="../js/appFive.js"></script>
-</body>
+  </body>
 </html>
