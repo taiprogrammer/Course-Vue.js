@@ -29,12 +29,25 @@ const app = Vue.createApp({
     },
 
     tellMeName(event, lastName) {
-      this.nameTyped = event.target.value.concat(" ").concat(lastName);
+      this.nameTyped = event.target.value;
+    },
+
+    outputFullName() {
+      console.log("Running again")
+      if (this.nameTyped === '') {
+        return ''
+      } else {
+        return this.nameTyped.concat(" ").concat("Marques")
+      }
     },
 
     confirmInput() {
       this.confirmedName = this.nameTyped;
     },
+
+    resetInput() {
+      this.nameTyped = ''
+    }
   },
 });
 
