@@ -8,6 +8,7 @@ const app = Vue.createApp({
       numberTyped: "",
       nameTyped: "",
       confirmedName: "",
+      fullname: ""
     };
   },
   methods: {
@@ -32,13 +33,13 @@ const app = Vue.createApp({
       this.nameTyped = event.target.value;
     },
 
-    outputFullName() {
-      if (this.nameTyped === '') {
-        return ''
-      } else {
-        return this.nameTyped.concat(" ").concat("Marques")
-      }
-    },
+    // outputFullName() {
+    //   if (this.nameTyped === '') {
+    //     return ''
+    //   } else {
+    //     return this.nameTyped.concat(" ").concat("Marques")
+    //   }
+    // },
 
     confirmInput() {
       this.confirmedName = this.nameTyped;
@@ -50,15 +51,23 @@ const app = Vue.createApp({
   },
 
   computed: {
-    fullName() {
-      console.log("Running again")
-      if (this.nameTyped === '') {
-        return ''
-      } else {
-        return this.nameTyped.concat(" ").concat("Marques")
-      }
-    }
+    // fullName() {
+    //   console.log("Running again")
+    //   if (this.nameTyped === '') {
+    //     return ''
+    //   } else {
+    //     return this.nameTyped.concat(" ").concat("Marques")
+    //   }
+    // }
   },
+
+  watch: {
+    nameTyped(value) {
+      this.fullName = value.concat(" ").concat("Marques")
+    }
+
+    // nameTyped(newValue, oldValue) {...}
+  }
 });
 
 app.mount(".section-sum-subtract");
