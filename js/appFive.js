@@ -33,7 +33,6 @@ const app = Vue.createApp({
     },
 
     outputFullName() {
-      console.log("Running again")
       if (this.nameTyped === '') {
         return ''
       } else {
@@ -47,6 +46,17 @@ const app = Vue.createApp({
 
     resetInput() {
       this.nameTyped = ''
+    }
+  },
+
+  computed: {
+    fullName() {
+      console.log("Running again")
+      if (this.nameTyped === '') {
+        return ''
+      } else {
+        return this.nameTyped.concat(" ").concat("Marques")
+      }
     }
   },
 });
