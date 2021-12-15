@@ -7,8 +7,9 @@ const app = Vue.createApp({
       subtractResult: "",
       numberTyped: "",
       nameTyped: "",
+      lastNameTyped: "",
       confirmedName: "",
-      fullname: ""
+      //fullname: ""
     };
   },
   methods: {
@@ -47,24 +48,37 @@ const app = Vue.createApp({
 
     resetInput() {
       this.nameTyped = ''
+      this.lastNameTyped = ''
     }
   },
 
   computed: {
-    // fullName() {
-    //   console.log("Running again")
-    //   if (this.nameTyped === '') {
-    //     return ''
-    //   } else {
-    //     return this.nameTyped.concat(" ").concat("Marques")
-    //   }
-    // }
+    fullName() {
+      console.log("Running again")
+      if (this.nameTyped === '' && this.lastNameTyped === '') {
+        return ''
+      } else {
+        return this.nameTyped.concat(" ").concat(this.lastNameTyped)
+      }
+    }
   },
 
   watch: {
-    nameTyped(value) {
-      this.fullName = value.concat(" ").concat("Marques")
-    }
+    // nameTyped(value) {
+    //   if (value === '') {
+    //     this.fullName = ''
+    //   } else {
+    //     this.fullName = value.concat(" ").concat(this.lastNameTyped)
+    //   }
+    // },
+
+    // lastNameTyped(value) {
+    //   if (value === '') {
+    //     this.fullname = ''
+    //   } else {
+    //     this.fullName = this.nameTyped.concat(" ").concat(value)
+    //   }
+    // }
 
     // nameTyped(newValue, oldValue) {...}
   }
