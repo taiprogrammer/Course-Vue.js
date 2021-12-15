@@ -47,20 +47,20 @@ const app = Vue.createApp({
     },
 
     resetInput() {
-      this.nameTyped = ''
-      this.lastNameTyped = ''
-    }
+      this.nameTyped = "";
+      this.lastNameTyped = "";
+    },
   },
 
   computed: {
     fullName() {
-      console.log("Running again")
-      if (this.nameTyped === '' && this.lastNameTyped === '') {
-        return ''
+      console.log("Running again");
+      if (this.nameTyped === "" && this.lastNameTyped === "") {
+        return "";
       } else {
-        return this.nameTyped.concat(" ").concat(this.lastNameTyped)
+        return this.nameTyped.concat(" ").concat(this.lastNameTyped);
       }
-    }
+    },
   },
 
   watch: {
@@ -71,7 +71,6 @@ const app = Vue.createApp({
     //     this.fullName = value.concat(" ").concat(this.lastNameTyped)
     //   }
     // },
-
     // lastNameTyped(value) {
     //   if (value === '') {
     //     this.fullname = ''
@@ -79,9 +78,8 @@ const app = Vue.createApp({
     //     this.fullName = this.nameTyped.concat(" ").concat(value)
     //   }
     // }
-
     // nameTyped(newValue, oldValue) {...}
-  }
+  },
 });
 
 app.mount(".section-sum-subtract");

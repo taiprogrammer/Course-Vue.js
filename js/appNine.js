@@ -4,7 +4,7 @@ const app = Vue.createApp({
       boxASelected: false,
       boxBSelected: false,
       boxCSelected: false,
-      highlited: "blue",
+      highlited: "palevioletred",
       notHighlited: "#ccc",
     };
   },

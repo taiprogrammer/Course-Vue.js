@@ -5,61 +5,61 @@ body {
 }
 
 main {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .section-sum-subtract {
-    display: flex;
-    flex-direction: column;
-    padding: 5vh;
-    margin: 10vh;
-    border-radius: 2px;
-    -webkit-box-shadow: 1px 4px 16px -1px rgba(234,107,255,0.55); 
-    box-shadow: 1px 4px 16px -1px rgba(234,107,255,0.55);
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  margin: 10vh;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 4px 16px -1px rgba(234, 107, 255, 0.55);
+  box-shadow: 1px 4px 16px -1px rgba(234, 107, 255, 0.55);
 }
 
 .section-sum-subtract h1 {
-    color: rgba(234,107,255,0.55);
+  color: rgba(234, 107, 255, 0.55);
 }
 
 .section-sum-subtract input {
-    padding: 5px;
-    border-color: rgba(234,107,255,0.55);
-    border-radius: 4px;
-    color: rgba(188, 49, 212, 0.55);
+  padding: 5px;
+  border-color: rgba(234, 107, 255, 0.55);
+  border-radius: 4px;
+  color: rgba(188, 49, 212, 0.55);
 }
 
 .section-sum-subtract input:focus {
-    outline: 1px solid rgba(234,107,255,0.55)
+  outline: 1px solid rgba(234, 107, 255, 0.55);
 }
 
 .section-sum-subtract div {
-    display: flex;
-    margin-top: 2vh;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 2vh;
+  justify-content: space-between;
 }
 
 .section-sum-subtract button {
-    background-color:aliceblue;
-    color: rgba(234,107,255,0.55);
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    margin-top: 2vh;
+  background-color: aliceblue;
+  color: rgba(234, 107, 255, 0.55);
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 2vh;
 }
 
 .section-sum-subtract button:hover {
-    background-color: rgba(209, 130, 223, 0.55);
-    color: rgba(188, 49, 212, 0.55);
+  background-color: rgba(209, 130, 223, 0.55);
+  color: rgba(188, 49, 212, 0.55);
 }
 
 .result {
-    color: rgba(188, 49, 212, 0.55);
+  color: rgba(188, 49, 212, 0.55);
 }
 
 .space {
-    margin-top: 1vh;
+  margin-top: 1vh;
 }

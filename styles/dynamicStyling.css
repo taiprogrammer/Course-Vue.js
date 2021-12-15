@@ -27,4 +27,9 @@ header {
   height: 100px;
   margin: 16px;
   border: 2px dashed #ccc;
+  cursor: pointer;
+}
+
+.active {
+  border-color: palevioletred;
 }

@@ -12,20 +12,18 @@
     <header>
       <h1>Vue Dynamic Styling</h1>
     </header>
-    <section id="styling">
+    <section id="styling" @click="disableBox">
+      <!--boxASelected ? 'demo active' : 'demo'-->
       <div
-        class="demo"
-        :style="{borderColor: boxASelected ? highlited : notHighlited}"
+        :class="{demo: true, active: boxASelected}"
         @click="boxSelected('A')"
       ></div>
       <div
-        class="demo"
-        :style="{borderColor : boxBSelected ? highlited : notHighlited}"
+        :class="{demo: true, active: boxBSelected}"
         @click="boxSelected('B')"
       ></div>
       <div
-        class="demo"
-        :style="{borderColor : boxCSelected ? highlited : notHighlited}"
+        :class="{demo: true, active: boxCSelected}"
         @click="boxSelected('C')"
       ></div>
     </section>

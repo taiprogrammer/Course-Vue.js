@@ -21,8 +21,8 @@ Vue.createApp({
   },
   methods: {
     addGoal() {
-      if (this.enteredValue <= 0 ) {
-        alert("You can't add an empty value")
+      if (this.enteredValue <= 0) {
+        alert("You can't add an empty value");
       } else {
         this.goals.push(this.enteredValue);
         this.enteredValue = "";
