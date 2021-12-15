@@ -15,15 +15,18 @@
     <section id="styling" @click="disableBox">
       <!--boxASelected ? 'demo active' : 'demo'-->
       <div
-        :class="{demo: true, active: boxASelected}"
+        class="demo"
+        :class="boxAClasses"
         @click="boxSelected('A')"
       ></div>
       <div
-        :class="{demo: true, active: boxBSelected}"
+        class="demo"
+        :class="boxBClasses"
         @click="boxSelected('B')"
       ></div>
       <div
-        :class="{demo: true, active: boxCSelected}"
+        class="demo"
+        :class="boxCClasses"
         @click="boxSelected('C')"
       ></div>
     </section>
