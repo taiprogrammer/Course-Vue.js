@@ -2,6 +2,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #e2e2e2;
 }
 
 main {
@@ -30,6 +31,21 @@ h2 {
 .el-col {
   display: flex;
   flex-direction: column;
+}
+
+input {
+    padding: 2%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 2px;
+    border-bottom-color: #634444;
+}
+
+input:focus {
+    outline: 1.5px solid #f05454;
+    outline-style: dotted;
+    border-radius: 2px;
 }
 
 button {
