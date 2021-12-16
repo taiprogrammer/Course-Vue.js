@@ -28,18 +28,18 @@ const app = Vue.createApp({
   },
 
   computed: {
-      boxAClasses() {
-          return { active: this.boxASelected }
-      },
+    boxAClasses() {
+      return { active: this.boxASelected };
+    },
 
-      boxBClasses() {
-          return { active: this.boxBSelected }
-      },
+    boxBClasses() {
+      return { active: this.boxBSelected };
+    },
 
-      boxCClasses() {
-          return { active: this.boxCSelected }
-      }
-  }
+    boxCClasses() {
+      return { active: this.boxCSelected };
+    },
+  },
 });
 
 app.mount("#styling");
