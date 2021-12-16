@@ -9,9 +9,14 @@ const app = Vue.createApp({
 
   methods: {
     addFilm() {
-      this.films.push(this.enteredValue);
-      this.enteredValue = "";
-      this.added = true;
+      if (this.enteredValue === "") {
+        alert("You can't add an empty value");
+      } else {
+        this.films.push(this.enteredValue);
+        this.enteredValue = "";
+        this.added = true;
+      }
+
       console.log(this.added);
     },
 
