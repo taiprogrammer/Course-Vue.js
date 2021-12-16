@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Films yo Watch</title>
+    <title>Films to Watch</title>
     <link rel="stylesheet" href="/styles/normalize.css" />
     <link rel="stylesheet" href="/styles/exercising/filmsToWatch.css" />
   </head>
@@ -18,6 +18,9 @@
         <section id="films">
           <div class="el-col">
             <input type="text" v-model="enteredValue" />
+            <p :class="added ? 'hidden' : 'visibleMessage'">
+              No films have been added yet. Start adding some films
+            </p>
             <button @click="addFilm">Add film</button>
             <ul>
               <li v-for="film of films">{{ film }}</li>

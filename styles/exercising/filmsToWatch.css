@@ -34,18 +34,18 @@ h2 {
 }
 
 input {
-    padding: 2%;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-radius: 2px;
-    border-bottom-color: #634444;
+  padding: 2%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 2px;
+  border-bottom-color: #634444;
 }
 
 input:focus {
-    outline: 1.5px solid #f05454;
-    outline-style: dotted;
-    border-radius: 2px;
+  outline: 1.5px solid #f05454;
+  outline-style: dotted;
+  border-radius: 2px;
 }
 
 button {
@@ -66,12 +66,24 @@ ul {
   list-style: none;
 }
 
+li {
+  padding: 3px;
+}
+
 .invisible {
   display: none;
 }
 
 .visible {
   display: block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visibleMessage {
+  visibility: visible;
 }
 
 .reset {
