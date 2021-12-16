@@ -18,7 +18,7 @@
         <section id="films">
           <div class="el-col">
             <input type="text" v-model="enteredValue" />
-            <p :class="added ? 'hidden' : 'visibleMessage'">
+            <p class="visibleMessage">
               No films have been added yet. Start adding some films
             </p>
             <button @click="addFilm">Add film</button>
@@ -28,18 +28,13 @@
                 }}
               </li>
             </ul>
-            <button
-              @click="resetList"
-              :class="['invisible reset', {visible: added} ]"
-            >
-              Reset
-            </button>
+            <button @click="resetList" class="reset">Reset</button>
           </div>
         </section>
       </div>
     </main>
 
     <script src="https://unpkg.com/vue@next"></script>
-    <script src="/js/exercising/filmsToWatch.js"></script>
+    <script src="/js/rendering-contents-contionally-list/filmsToWatch.js"></script>
   </body>
 </html>
