@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fourth Practice</title>
     <link rel="stylesheet" href="/styles/normalize.css" />
-    <link rel="stylesheet" href="/styles/basics-core-concepts/fourthPractice.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/basics-core-concepts/fourthPractice.css"
+    />
   </head>
   <body>
     <header>
@@ -14,9 +17,7 @@
     </header>
     <section id="assignment">
       <!-- 1) Fetch the user input and use it as a CSS class -->
-      <!-- 1) Busque a entrada do usuário e use-a como uma classe CSS -->
       <!-- The entered class should be added to the below paragraph -->
-      <!-- A classe inserida deve ser adicionada ao parágrafo abaixo -->
       <input v-model="enteredValue" type="text" />
       <!-- (available classes: "user1", "user2") -->
       <p :class="['user1', {user2: enteredValue} ]">Style me!</p>
