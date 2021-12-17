@@ -63,6 +63,10 @@ button:hover {
 }
 
 ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   list-style: none;
 }
 
@@ -72,6 +76,7 @@ li {
 
 img {
   height: 16px;
+  margin-right: 5px;
 }
 
 .invisible {
