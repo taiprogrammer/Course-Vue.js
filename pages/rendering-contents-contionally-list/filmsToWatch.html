@@ -18,7 +18,7 @@
         <section id="films">
           <div class="el-col">
             <input type="text" v-model="enteredValue" />
-            <p class="visibleMessage">
+            <p v-if="films.length === 0" class="visibleMessage">
               No films have been added yet. Start adding some films
             </p>
             <button @click="addFilm">Add film</button>
@@ -28,7 +28,7 @@
                 }}
               </li>
             </ul>
-            <button @click="resetList" class="reset">Reset</button>
+            <button v-if="films.length > 0" @click="resetList" class="reset">Reset</button>
           </div>
         </section>
       </div>
