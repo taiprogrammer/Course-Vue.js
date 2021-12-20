@@ -23,6 +23,7 @@ const app = Vue.createApp({
     resetList() {
       this.films = [];
       this.added = false;
+      console.log(this.added);
     },
   },
 });
