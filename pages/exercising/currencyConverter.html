@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/exercising/currencyConverter.css" />
+  </head>
+  <body>
+    <main>
+      <div class="my-title">
+        <h1>Currency Converter</h1>
+      </div>
+      <section class="boxes">
+        <div class="row">
+          <div class="box">
+            <h3>USD - BRL</h3>
+            <div>
+              <input v-model="enteredValueUsd" type="number" />
+              <button @click="convertUsdToBrl">Convert</button>
+            </div>
+            <p>{{ resultOne }}</p>
+          </div>
+          <div class="box">
+            <h3>BRL - USD</h3>
+            <div>
+              <input v-model="enteredValueBrl" type="number" />
+              <button @click="convertBrlToUsd">Convert</button>
+            </div>
+            <p>{{ resultTwo }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <h3>CAD - BRL</h3>
+            <div>
+              <input v-model="enteredValueCad" type="number" />
+              <button>Convert</button>
+            </div>
+            <p>{{ resultThree }}</p>
+          </div>
+          <div class="box">
+            <h3>BRL - CAD</h3>
+            <div>
+              <input v-model="enteredValueBrlToCad" type="number" />
+              <button>Convert</button>
+            </div>
+            <p>Result</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <h3>EUR - BRL</h3>
+            <div>
+              <input v-model="enteredValueEur" type="number" />
+              <button>Convert</button>
+            </div>
+            <p>Result</p>
+          </div>
+          <div class="box">
+            <h3>BRL - EUR</h3>
+            <div>
+              <input v-model="enteredValueBrlToEur" type="number" />
+              <button>Convert</button>
+            </div>
+            <p>Result</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/js/exercising/currencyConverter.js"></script>
+  </body>
+</html>
