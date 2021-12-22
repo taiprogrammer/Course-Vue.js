@@ -37,7 +37,7 @@
             <h3>CAD - BRL</h3>
             <div>
               <input v-model="enteredValueCad" type="number" />
-              <button>Convert</button>
+              <button @click="convertCadToBrl">Convert</button>
             </div>
             <p>{{ resultThree }}</p>
           </div>
@@ -45,9 +45,9 @@
             <h3>BRL - CAD</h3>
             <div>
               <input v-model="enteredValueBrlToCad" type="number" />
-              <button>Convert</button>
+              <button @click="convertBrlToCad">Convert</button>
             </div>
-            <p>Result</p>
+            <p>{{ resultFour }}</p>
           </div>
         </div>
         <div class="row">
@@ -55,17 +55,17 @@
             <h3>EUR - BRL</h3>
             <div>
               <input v-model="enteredValueEur" type="number" />
-              <button>Convert</button>
+              <button @click="convertEurToBrl">Convert</button>
             </div>
-            <p>Result</p>
+            <p>{{ resultFive }}</p>
           </div>
           <div class="box">
             <h3>BRL - EUR</h3>
             <div>
               <input v-model="enteredValueBrlToEur" type="number" />
-              <button>Convert</button>
+              <button @click="convertBrlToEur">Convert</button>
             </div>
-            <p>Result</p>
+            <p>{{ resultSix }}</p>
           </div>
         </div>
       </section>
