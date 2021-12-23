@@ -12,7 +12,7 @@ const app = Vue.createApp({
       resultThree: "",
       resultFour: "",
       resultFive: "",
-      resultSix: ""
+      resultSix: "",
     };
   },
 
@@ -21,7 +21,7 @@ const app = Vue.createApp({
       if (this.enteredValueUsd.length <= 0) {
         alert("Please enter a value");
       } else {
-        this.resultOne = 'R$ '.concat((this.enteredValueUsd * 5.72).toFixed(2));
+        this.resultOne = "R$ ".concat((this.enteredValueUsd * 5.72).toFixed(2));
       }
     },
 
@@ -29,7 +29,7 @@ const app = Vue.createApp({
       if (this.enteredValueBrl.length <= 0) {
         alert("Please enter a value");
       } else {
-        this.resultTwo = '$ '.concat((this.enteredValueBrl / 5.72).toFixed(2));
+        this.resultTwo = "$ ".concat((this.enteredValueBrl / 5.72).toFixed(2));
       }
     },
 
@@ -45,30 +45,33 @@ const app = Vue.createApp({
 
     convertBrlToCad() {
       if (this.enteredValueBrlToCad <= 0) {
-        alert('Please enter a value');
-      }
-      else {
-        this.resultFour = 'C$ '.concat((this.enteredValueBrlToCad / 4.45).toFixed(2))
+        alert("Please enter a value");
+      } else {
+        this.resultFour = "C$ ".concat(
+          (this.enteredValueBrlToCad / 4.45).toFixed(2)
+        );
       }
     },
 
     convertEurToBrl() {
       if (this.enteredValueEur <= 0) {
-        alert('Please enter a value');
-      }
-      else {
-        this.resultFive = 'R$ '.concat((this.enteredValueEur * 6.43).toFixed(2));
+        alert("Please enter a value");
+      } else {
+        this.resultFive = "R$ ".concat(
+          (this.enteredValueEur * 6.43).toFixed(2)
+        );
       }
     },
 
     convertBrlToEur() {
       if (this.enteredValueBrlToEur <= 0) {
-        alert('Please enter a value');
+        alert("Please enter a value");
+      } else {
+        this.resultSix = "€ ".concat(
+          (this.enteredValueBrlToEur / 6.43).toFixed(2)
+        );
       }
-      else {
-        this.resultSix = '€ '.concat((this.enteredValueBrlToEur / 6.43).toFixed(2))
-      }
-    }
+    },
   },
 });
 
