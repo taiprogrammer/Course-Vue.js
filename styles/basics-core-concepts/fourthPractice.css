@@ -5,58 +5,58 @@ body {
 }
 
 header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  margin: 3rem;
-  border-radius: 10px;
-  padding: 1rem;
   background-color: #1b995e;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color: white;
+  margin: 3rem;
+  padding: 1rem;
   text-align: center;
 }
 
 #assignment {
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem;
-  border-radius: 10px;
   padding: 1rem;
   text-align: center;
 }
 
 #assignment h2 {
-  font-size: 2rem;
   border-bottom: 4px solid #ccc;
   color: #1b995e;
+  font-size: 2rem;
   margin: 0 0 1rem 0;
 }
 
 p {
+  background-color: #8ddba4;
+  border-radius: 25px;
+  color: #1f1f1f;
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: #8ddba4;
   padding: 0.5rem;
-  color: #1f1f1f;
-  border-radius: 25px;
 }
 
 #assignment input {
-  font: inherit;
   border: 1px solid #ccc;
+  font: inherit;
 }
 
 #assignment input:focus {
-  outline: none;
-  border-color: #1b995e;
   background-color: #d7fdeb;
+  border-color: #1b995e;
+  outline: none;
 }
 
 #assignment button {
-  font: inherit;
-  cursor: pointer;
-  border: 1px solid #ff0077;
   background-color: #ff0077;
-  color: white;
-  padding: 0.05rem 1rem;
+  border: 1px solid #ff0077;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.05rem 1rem;
 }
 
 #assignment button:hover,

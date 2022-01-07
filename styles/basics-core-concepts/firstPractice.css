@@ -11,8 +11,8 @@ body {
 }
 
 .my-info h2 {
-  color: rgb(129, 20, 71);
   border-bottom: solid 1px #423632;
+  color: rgb(129, 20, 71);
 }
 
 .my-info p {

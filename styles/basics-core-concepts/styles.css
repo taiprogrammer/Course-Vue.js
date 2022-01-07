@@ -11,83 +11,83 @@ body {
 }
 
 header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  margin: 3rem auto;
-  border-radius: 10px;
-  padding: 1rem;
   background-color: #4fc08d;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color: white;
+  margin: 3rem auto;
+  max-width: 40rem;
+  padding: 1rem;
   text-align: center;
   width: 90%;
-  max-width: 40rem;
 }
 
 .user-goal {
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem auto;
-  border-radius: 10px;
+  max-width: 40rem;
   padding: 1rem;
   text-align: center;
   width: 90%;
-  max-width: 40rem;
 }
 
 .user-goal-two {
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem auto;
-  border-radius: 10px;
+  max-width: 40rem;
   padding: 1rem;
   text-align: center;
   width: 90%;
-  max-width: 40rem;
 }
 
 .user-goal h2 {
-  font-size: 2rem;
   border-bottom: 4px solid #ccc;
   color: #4fc08d;
+  font-size: 2rem;
   margin: 0 0 1rem 0;
   padding-bottom: 8px;
 }
 
 .user-goal-two h2 {
-  font-size: 2rem;
   border-bottom: 4px solid #ccc;
   color: #4fc08d;
+  font-size: 2rem;
   margin: 0 0 1rem 0;
   padding-bottom: 8px;
 }
 
 .user-goal p {
+  background-color: #4fc08d;
+  border: 1px solid #4fc08d;
+  border-radius: 25px;
+  color: white;
   font-size: 1.25rem;
   font-weight: bold;
-  border: 1px solid #4fc08d;
-  background-color: #4fc08d;
-  color: white;
   padding: 0.5rem;
-  border-radius: 25px;
 }
 
 .user-goal-two p {
+  background-color: #4fc08d;
+  border: 1px solid #4fc08d;
+  border-radius: 25px;
+  color: white;
   font-size: 1.25rem;
   font-weight: bold;
-  border: 1px solid #4fc08d;
-  background-color: #4fc08d;
-  color: white;
   padding: 0.5rem;
-  border-radius: 25px;
 }
 
 .user-goal a {
-  text-decoration: none;
   color: #2e7e5a;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .user-goal-two a {
-  text-decoration: none;
   color: #2e7e5a;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .user-goal a:hover {
@@ -99,24 +99,24 @@ header {
 }
 
 .user-goal input {
-  font: inherit;
   border: 1px solid #ccc;
+  font: inherit;
 }
 
 .user-goal input:focus {
-  outline: none;
-  border-color: #1b995e;
   background-color: #d7fdeb;
+  border-color: #1b995e;
+  outline: none;
 }
 
 .user-goal button {
-  font: inherit;
-  cursor: pointer;
-  border: 1px solid #ff0077;
   background-color: #ff0077;
-  color: white;
-  padding: 0.05rem 1rem;
+  border: 1px solid #ff0077;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.05rem 1rem;
 }
 
 .user-goal button:hover,
