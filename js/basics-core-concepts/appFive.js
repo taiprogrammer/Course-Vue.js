@@ -9,7 +9,6 @@ const app = Vue.createApp({
       nameTyped: "",
       lastNameTyped: "",
       confirmedName: "",
-      //fullname: ""
     };
   },
   methods: {

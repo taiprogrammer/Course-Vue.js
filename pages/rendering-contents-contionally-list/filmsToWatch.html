@@ -18,19 +18,28 @@
         <section id="films">
           <div class="el-col">
             <input type="text" v-model="enteredValue" />
-            <p v-show="films.length === 0" class="visibleMessage">
+            <p v-if="films.length === 0" class="visibleMessage">
               No films have been added yet. Start adding some films
             </p>
             <button @click="addFilm">Add film</button>
-            <ul v-show="films.length > 0">
-              <li v-for="film of films">
-                <img src="/assets/black-star-silhouette.png" alt="" /> {{ film
-                }}
+            <ul v-else>
+              <li v-for="(film, index) of films">
+                <img src="/assets/black-star-silhouette.png" alt="" />{{ index +
+                1 }} - {{ film }}
+                <span @click="removeFilm(index)" class="exclude">x</span>
               </li>
             </ul>
-            <button v-show="films.length > 0" @click="resetList" class="reset">
+            <button v-if="films.length > 0" @click="resetList" class="reset">
               Reset
             </button>
+            <!-- <ul v-else>
+              <li v-for="(value, key, index) in object">{{ key }}: {{ value }}</li>
+            </ul> -->
+            <!-- <div v-else v-for="number in 10">{{ number }}</div> -->
+            <!-- <div v-else v-for="(product, index) in products">
+              <span>{{ product.name }}</span>
+              <span @click="remover(index)">x</span>
+            </div> -->
           </div>
         </section>
       </div>

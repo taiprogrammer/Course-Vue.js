@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600&family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --dark-blue: #072227;
+  --medium-blue: #35858b;
+  --light-blue: #4fbdba;
+  --lighter-blue: #aefeff;
+  --white: #f5f5f5;
+  --gray: #636060;
+}
+
+body {
+  background-color: var(--light-blue);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+.signUp {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.between {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col-1 img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 90vh;
+  width: 60vw;
+}
+
+.col-2 {
+  width: 40%;
+}
+
+.section-sign-up {
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 90vh;
+  margin-top: 5vh;
+  width: 95vw;
+}
+
+.column-centered {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  color: var(--medium-blue);
+  font-size: 40px;
+}
+
+.social-icon img {
+  border-radius: 100%;
+  box-shadow: 5px 5px 15px -3px #636060;
+  cursor: pointer;
+  height: 25px;
+  margin-left: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 5px 5px 15px -3px var(--gray);
+}
+
+.second-option {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.email p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.email input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 5px;
+}
+
+.password p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.password input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 5px;
+}
+
+.sign-up button {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 3px;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 8px;
+    width: 17.4vw;
+}
+
+.sign-up button:hover {
+    background-color: var(--medium-blue);
+}
+
+.have-account p{
+    color: var(--gray);
+    margin-top: 8px;
+}
+
+.have-account a {
+    text-decoration: none;
+    color: var(--medium-blue);
+}
+
+.have-account a:hover {
+    color: var(--dark-blue);
+}

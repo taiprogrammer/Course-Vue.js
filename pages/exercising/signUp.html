@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/exercising/signUp.css" />
+  </head>
+  <body>
+    <main class="signUp">
+      <div class="row section-sign-up">
+        <div class="col-1">
+          <img src="/assets/bg-sign-up.jpg" alt="Image Sign Up" />
+        </div>
+        <div class="col-2 column">
+          <div class="content column-centered">
+            <div class="first-step column-centered">
+              <h3>Sign up</h3>
+              <div class="between">
+                <div class="google social-icon">
+                    <img src="/assets/google.png" alt="Google">
+                </div>
+                <div class="facebook social-icon">
+                    <img src="/assets/facebook.png" alt="Facebook">
+                </div>
+                <div class="twitter social-icon">
+                    <img src="/assets/twitter.png" alt="Twitter">
+                </div>
+              </div>
+              <div class="second-option">
+                <p>Or Sign up with Email</p>
+              </div>
+            </div>
+            <div class="second-step">
+              <div class="email column">
+                <p>Email</p>
+                <input type="email" class]="email-field" />
+              </div>
+              <div class="password column">
+                <p>Password</p>
+                <input type="password" class="password-field" />
+              </div>
+              <div class="sign-up">
+                <button @click="signUp">Sign up</button>
+                <div class="have-account">
+                  <p>
+                    Already have an account?
+                    <a href="#" class="option-sign-in">Sign in</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+  </body>
+</html>
