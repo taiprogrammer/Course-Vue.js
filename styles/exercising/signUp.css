@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600&family=Outfit:wght@300;400;600&display=swap");
 :root {
   --dark-blue: #072227;
+  --second-dark-blue: #0a4049;
   --medium-blue: #35858b;
   --light-blue: #4fbdba;
   --lighter-blue: #aefeff;
@@ -45,9 +46,11 @@ body {
 .section-sign-up {
   background-color: var(--white);
   border-radius: 10px;
+  box-shadow: 2px 5px 24px 5px rgba(7, 34, 39, 0.5);
   height: 90vh;
   margin-top: 5vh;
   width: 95vw;
+  -webkit-box-shadow: 2px 5px 24px 5px rgba(7, 34, 39, 0.5);
 }
 
 .column-centered {
@@ -79,56 +82,56 @@ h3 {
 }
 
 .email p {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .email input {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    outline: none;
-    padding: 5px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  padding: 5px;
 }
 
 .password p {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .password input {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    outline: none;
-    padding: 5px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  padding: 5px;
 }
 
 .sign-up button {
-    background-color: var(--dark-blue);
-    border: none;
-    border-radius: 3px;
-    color: var(--white);
-    cursor: pointer;
-    margin-top: 20px;
-    padding: 8px;
-    width: 17.4vw;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 3px;
+  color: var(--white);
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 8px;
+  width: 17.4vw;
 }
 
 .sign-up button:hover {
-    background-color: var(--medium-blue);
+  background-color: var(--medium-blue);
 }
 
-.have-account p{
-    color: var(--gray);
-    margin-top: 8px;
+.have-account p {
+  color: var(--gray);
+  margin-top: 8px;
 }
 
 .have-account a {
-    text-decoration: none;
-    color: var(--medium-blue);
+  text-decoration: none;
+  color: var(--medium-blue);
 }
 
 .have-account a:hover {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }

@@ -1,0 +1,23 @@
+@import url(/styles/exercising/signUp.css);
+
+main {
+  background-image: repeating-linear-gradient(
+    var(--light-blue),
+    var(--second-dark-blue)
+  );
+  height: 100vh;
+}
+
+.row {
+    display: flex;
+}
+
+.menu {
+    background-color: var(--white);
+    border-radius: 5px;
+    /* filter:; */
+    height: 90vh;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    width: 20vw;
+}
