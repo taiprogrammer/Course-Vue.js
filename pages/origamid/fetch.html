@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/origamid/fetch.css" />
     <title>Vue JS Fetch</title>
   </head>
   <body>
     <div id="app">
-      {{apple}}
-      <br />
-      <br />
+      <div class="container">
+        <p>Company: {{ apple.companyName }}</p>
+        <p>Market Cap: {{ apple.marketCap }}</p>
+      </div>
       <hr />
-      {{google}}
+      <div class="container">
+        <p>Company: {{ google.companyName }}</p>
+        <p>Market Cap: {{ google.marketCap }}</p>
+      </div>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
