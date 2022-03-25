@@ -18,6 +18,20 @@
         <p>Company: {{ google.companyName }}</p>
         <p>Market Cap: {{ google.marketCap }}</p>
       </div>
+      <h2>Am I a smally cat?</h2>
+      <button @click="setSmell()">Set Henrique Smell</button>
+      <p v-if="fedido === true" class="brown">Yes, I am</p>
+      <p v-else class="pink">
+        unfortunately, in this moment, I have a good smell
+      </p>
+      <button @click="setSmellTaiza()">Set Taiza Smell</button>
+      <p v-if="taiza === true" class="brown">
+        I actually, ALWAYS have a good smell
+      </p>
+      <p v-else class="pink">
+        fortunately, in this moment, and, of course, EVERY moment, I have a good
+        smell
+      </p>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
