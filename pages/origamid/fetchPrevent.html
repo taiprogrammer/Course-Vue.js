@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue JS Fetch Prevent</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="container">
+        <a @click.prevent="takeAction" :href="apple">Apple</a>
+        <a @click.prevent="takeAction" :href="google">Google</a>
+        <a @click.prevent="takeAction" :href="amazon">Amazon</a>
+        <a @click.prevent="takeAction" :href="ebay">Ebay</a>
+        <a @click.prevent="takeAction" :href="paypal">Paypal</a>
+        <div v-if="functionIsCalled" v-html="showCompanyName"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+  </body>
+</html>
+<script>
+  const app = Vue.createApp({
+    data() {
+      return {
+        apple: "https://api.origamid.dev/stock/aapl/quote",
+        google: "https://api.origamid.dev/stock/googl/quote",
+        amazon: "https://api.origamid.dev/stock/amzn/quote",
+        ebay: "https://api.origamid.dev/stock/ebay/quote",
+        paypal: "https://api.origamid.dev/stock/pypl/quote",
+        action: {},
+        functionIsCalled: false,
+      };
+    },
+    methods: {
+      takeAction(event) {
+        if (event.srcElement.href === this.apple) {
+          fetch(event.srcElement.href)
+            .then((response) => response.json())
+            .then((apple) => (this.action = apple));
+          this.functionIsCalled = true;
+        } else if (event.srcElement.href === this.google) {
+          fetch(event.srcElement.href)
+            .then((response) => response.json())
+            .then((google) => (this.action = google));
+          this.functionIsCalled = true;
+        } else if (event.srcElement.href === this.amazon) {
+          fetch(event.srcElement.href)
+            .then((response) => response.json())
+            .then((amazon) => (this.action = amazon));
+          this.functionIsCalled = true;
+        } else if (event.srcElement.href === this.ebay) {
+          fetch(event.srcElement.href)
+            .then((response) => response.json())
+            .then((ebay) => (this.action = ebay));
+          this.functionIsCalled = true;
+        } else if (event.srcElement.href === this.paypal) {
+          fetch(event.srcElement.href)
+            .then((response) => response.json())
+            .then((paypal) => (this.action = paypal));
+          this.functionIsCalled = true;
+        }
+      },
+    },
+    computed: {
+      showCompanyName() {
+        return `
+                <p>Company name: ${this.action.companyName}</p>
+                <p>Latest Price: ${this.action.latestPrice}</p>
+                <p>Market Cap: ${this.action.marketCap}</p>
+            `;
+      },
+    },
+  });
+
+  app.mount("#app");
+</script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+  body {
+    background-color: #000000;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .container a {
+    color: tomato;
+    text-decoration: none;
+    padding: 5px;
+  }
+</style>
