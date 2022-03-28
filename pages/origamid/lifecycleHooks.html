@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifecycle Hooks</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <!-- {{user}} -->
+        <input
+          type="text"
+          placeholder="Search your username here"
+          v-model="username"
+          @change="getGithub"
+        />
+        {{username}}
+        <div>
+          <p>User: {{ user.login }}</p>
+          <img :src="user.avatar_url" />
+          <p>Followers: {{ user.followers }}</p>
+          <p>Following: {{ user.following }}</p>
+        </div>
+        <hr />
+        <div>
+          <p>Counter</p>
+          <p @click="counter++">{{ counter }}</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+  </body>
+</html>
+<script>
+  const app = Vue.createApp({
+    data() {
+      return {
+        username: undefined,
+        user: new Object(),
+        counter: 0,
+      };
+    },
+    methods: {
+      getGithub() {
+        fetch(`https://api.github.com/users/${this.username}`)
+          .then((response) => response.json())
+          .then((response) => (this.user = response));
+      },
+    },
+    updated() {
+      document.title = this.counter;
+    },
+    // created() {
+    //   this.getGithub();
+    // },
+  });
+
+  app.mount("#app");
+</script>
+<style></style>
